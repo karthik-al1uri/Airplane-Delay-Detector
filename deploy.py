@@ -6,13 +6,13 @@ from azure.ai.ml.entities import (
     Model,
     Environment,
     CodeConfiguration,
-)z
+)
 import sys
 
 # --- 1. Connect to Azure ML Workspace ---
 try:
     # !!! IMPORTANT: REPLACE WITH YOUR ACTUAL SUBSCRIPTION ID !!!
-    subscription_id = "f275338c-b810-48ca-a2f8-0292da450b0a"
+    subscription_id = ""
     resource_group = "flight-project-rg" # Should match resource group you created
     workspace = "flight-workspace"       # Should match workspace you created
 
