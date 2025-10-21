@@ -1,0 +1,13 @@
+name: flight-pipeline-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9 # Or match your Colab version if different
+  - pip
+  - pip:
+    - azureml-mlflow
+    - azureml-inference-schema
+    - scikit-learn==1.3.2 # Match the version used for training if possible
+    - pandas
+    - joblib
+    - numpy

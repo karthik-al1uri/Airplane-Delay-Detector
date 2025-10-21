@@ -1,0 +1,12 @@
+# See what files you've changed
+git status
+
+# Add all your new changes to be tracked
+git add .
+
+# Save a new snapshot with a message
+git commit -m "Added Spark feature engineering"
+
+
+# This sends your new commits to the cloud
+git push
