@@ -1,9 +1,8 @@
 azure-ai-ml
 azure-identity
-matplotlib
-seaborn
-matplotlib
-pandas
-numpy
-scikit-learn
-joblib
+matplotlib # Added
+seaborn    # Added
+pandas     # Added (might be implicitly installed already, but good to list)
+numpy      # Added (might be implicitly installed already, but good to list)
+scikit-learn==1.3.2 # Added - IMPORTANT: Use the same version as Colab if possible
+joblib     # Added (might be implicitly installed already, but good to list)

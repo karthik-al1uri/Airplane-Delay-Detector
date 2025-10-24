@@ -16,15 +16,14 @@ weather_2008/
 *.gz
 *.zip
 *.tar.gz
+flight_delay_pipeline_no_weather.pkl # Ignore the model file itself too
 
 # Ignore other common files/folders
 .vscode/
 .ipynb_checkpoints/
 *.log
-*.ipynb # Ignore notebooks if any
-
-# Keep only essential files (redundant but safe)
-!score.py
-!environment.yml
-# !requirements.txt # Usually not needed for deployment environment
-# !deploy.py       # Not needed for deployment environment
+*.ipynb
+deploy.py
+requirements.txt
+Readme.md
+git-comments.txt
