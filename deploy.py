@@ -12,9 +12,9 @@ import sys
 # --- 1. Connect to Azure ML Workspace ---
 try:
     # !!! IMPORTANT: REPLACE WITH YOUR ACTUAL SUBSCRIPTION ID !!!
-    subscription_id = ""
-    resource_group = "flight-project-rg" # Should match resource group you created
-    workspace = "flight-workspace"       # Should match workspace you created
+    subscription_id = "a56afc44-f09b-4883-84e5-aaf8f5334b79"
+    resource_group = "Flight-Tracking" # Should match resource group you created
+    workspace = "Flight-track-2111"      # Should match workspace you created
 
     if subscription_id == "<YOUR_SUBSCRIPTION_ID>":
         print("❌ Error: Please replace <YOUR_SUBSCRIPTION_ID> with your actual Azure Subscription ID in deploy.py")
@@ -29,7 +29,13 @@ except Exception as e:
      sys.exit(1)
 
 # --- 2. Define Names ---
-endpoint_name = "flight-delay-predictor-v1"
+#endpoint_name = "flight-delay-predictor-v1"
+
+# Option 2: Add a date/time stamp for more uniqueness
+import datetime
+endpoint_name = "flight-pred-" + datetime.datetime.now().strftime("%Y%m%d%H%M")
+
+
 model_local_path = "./flight_delay_pipeline_no_weather.pkl" # Your downloaded file
 model_name = "flight-delay-pipeline-no-weather"
 deployment_name = "blue"

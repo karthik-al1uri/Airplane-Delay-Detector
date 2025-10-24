@@ -1,0 +1,30 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore Git folder
+.git/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore downloaded/unzipped data
+airline.parquet/
+weather_2008/
+*.csv
+*.txt
+*.gz
+*.zip
+*.tar.gz
+
+# Ignore other common files/folders
+.vscode/
+.ipynb_checkpoints/
+*.log
+*.ipynb # Ignore notebooks if any
+
+# Keep only essential files (redundant but safe)
+!score.py
+!environment.yml
+# !requirements.txt # Usually not needed for deployment environment
+# !deploy.py       # Not needed for deployment environment

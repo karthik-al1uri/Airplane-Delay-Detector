@@ -1,2 +1,9 @@
 azure-ai-ml
 azure-identity
+matplotlib
+seaborn
+matplotlib
+pandas
+numpy
+scikit-learn
+joblib
